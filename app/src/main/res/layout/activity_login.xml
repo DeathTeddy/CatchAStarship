@@ -4,18 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/space_background_portrait"
     tools:context="com.example.kentec.catchastarship.Login"
     tools:layout_editor_absoluteY="25dp">
-
-    <ImageView
-        android:id="@+id/imageViewLoginBackground"
-        android:layout_width="1249dp"
-        android:layout_height="568dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/animated_backround" />
 
     <EditText
         android:id="@+id/editTextName"
@@ -78,7 +69,7 @@
         android:gravity="center"
         android:inputType="textMultiLine"
         android:text="CATCH'A SHIP"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextName"
         app:layout_constraintEnd_toEndOf="parent"

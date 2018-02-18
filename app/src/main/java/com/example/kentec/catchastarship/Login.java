@@ -38,6 +38,4 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-    AnimationDrawable progressAnimation = (AnimationDrawable) imageViewLoginBackground.getBackground();
-    progressAnimation.start();
 }
