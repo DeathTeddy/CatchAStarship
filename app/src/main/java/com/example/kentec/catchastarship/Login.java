@@ -1,6 +1,7 @@
 package com.example.kentec.catchastarship;
 
 import android.content.SharedPreferences;
+import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -25,7 +26,6 @@ import android.widget.EditText;
 
 public class Login extends AppCompatActivity {
 
-
     private SharedPreferences mPreferences;
     private SharedPreferences.Editor mEditor;
 
@@ -38,4 +38,6 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
+    AnimationDrawable progressAnimation = (AnimationDrawable) imageViewLoginBackground.getBackground();
+    progressAnimation.start();
 }
