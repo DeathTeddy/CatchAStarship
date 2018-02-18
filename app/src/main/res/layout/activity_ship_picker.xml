@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center_vertical"
+    tools:context="com.example.kentec.catchastarship.ShipPicker"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="142dp"
+        android:layout_height="20dp"
+        android:text="Choose your starship."
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <RadioGroup
+        android:layout_width="385dp"
+        android:layout_height="419dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="84dp">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@drawable/ship_3_resize"
+            android:checked="false"
+            android:gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:layout_weight="1"
+            android:button="@drawable/ship_1_resize"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@drawable/ship_2_resize"
+            android:gravity="center_vertical" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confrim"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+</android.support.constraint.ConstraintLayout>
