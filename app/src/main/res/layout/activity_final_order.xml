@@ -10,24 +10,36 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="98dp"
-        android:layout_height="23dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="32dp"
         android:text="Starship order:"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="127dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewThank" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="324dp"
-        android:layout_height="247dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="138dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
         android:text="Name; country; phone; address; ship"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
         android:id="@+id/imageViewThank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Insert_Image"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/insert_image" />
 </android.support.constraint.ConstraintLayout>

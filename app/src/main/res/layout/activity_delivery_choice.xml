@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
         android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:text="New Order"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintStart_toStartOf="@+id/button2"
@@ -38,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Insert_Image" />
+        app:srcCompat="@drawable/insert_image" />
 
     <TextView
         android:id="@+id/textView3"
