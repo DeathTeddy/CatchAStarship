@@ -4,54 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kentec.catchastarship.DeliveryChoice">
+    tools:context="com.example.kentec.catchastarship.DeliveryChoice"
+    tools:layout_editor_absoluteY="25dp">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_width="119dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/brigade"
         android:text="New Order"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="289dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
+        android:fontFamily="@font/brigade"
         android:text="View Last order"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <ImageView
-        android:id="@+id/imageViewWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="77dp"
-        android:contentDescription="insert logo"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/insert_image" />
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="375dp" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="112dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginStart="66dp"
-        android:text="Display username"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewWelcome" />
+        android:id="@+id/textViewWelcome"
+        android:layout_width="252dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/brigade"
+        android:orientation=" "
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="86dp" />
 </android.support.constraint.ConstraintLayout>
