@@ -1,3 +1,25 @@
-Class Project.
+Small Business App (with a partner)
 
-A simple andriod app to order starships
+You are going to design an App for a small business (you pick the business!)
+
+You will need the following:
+
+    * At least two Activities.
+    * Save at least one data point with a SharedPreference.
+    * Send at least one data point between Activities using an Intent.
+      Read in input from the user using at least one of each:
+
+    1. Checkbox
+    2. TextView
+    3. Radio Button (use a ButtonGroup)
+
+    * Have at least on image in the application.
+    * Include a BroadcastReceiver to deal with a system event.  Some examples are:
+
+    1. Intent.ACTION_POWER_CONNECTED
+    2. Intent.ACTION_POWER_DISCONNECTED
+    3. Intent.ACTION_BATTERY_OKAY
+
+Notify the user of the event (a Toast is fine but it is up to you).
+
+    One Activity needs a ConstraintLayout and one Activity needs a LinearLayout (horizontal).
