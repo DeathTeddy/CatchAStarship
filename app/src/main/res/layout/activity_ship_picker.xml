@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:foregroundGravity="center_vertical"
     tools:context="com.example.kentec.catchastarship.ShipPicker"
     tools:layout_editor_absoluteY="25dp">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="280dp"
+        android:id="@+id/textViewChoose"
+        android:layout_width="348dp"
         android:layout_height="36dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/brigade"
+        android:gravity="center_horizontal"
         android:text="Choose your starship"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,19 +30,21 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="384dp"
+        android:layout_width="389dp"
         android:layout_height="430dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="68dp"
         android:foregroundGravity="center_vertical"
         android:gravity="center_vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButtonShip1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center"
@@ -49,7 +54,7 @@
             android:gravity="center_vertical" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButtonShip2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -61,7 +66,7 @@
             tools:layout_editor_absoluteY="0dp" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/radioButtonShip3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -72,15 +77,18 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonConfim"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:fontFamily="@font/brigade"
+        android:onClick="changeActivityAddress"
         android:text="Confrim"
+        android:textColor="@android:color/background_light"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
