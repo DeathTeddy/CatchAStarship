@@ -19,6 +19,7 @@ public class FinalOrder extends AppCompatActivity {
 
     private TextView mShipOrder;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +28,23 @@ public class FinalOrder extends AppCompatActivity {
 
         SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        String shipOrder = "Your chosen ship: " + mPreferences.getString("com.example.kentec.catchastarship.chosenShip", "");
-        mShipOrder.setText(shipOrder);
+        String name = getIntent().getStringExtra("editTextName" );
+        String country = getIntent().getStringExtra("editTextCountry");
+        String phone = getIntent().getStringExtra("editTextPhone");
+        String address = getIntent().getStringExtra("editTextAddress");
+        boolean isChecked = getIntent().getBooleanExtra("checkBoxValue", false);
+        if(isChecked==false) {
+            String shipOrder = "Order Info " + "\n" + "Name: " + name + "\n" + "Your chosen ship: " + mPreferences.getString("com.example.kentec.catchastarship.chosenShip", "") + "\n" + "Is an Earthling" + "\n"
+                    + "Phone: " + phone + "\n" + "Address: " + address + "\n" + "country: " + country;
+
+            mShipOrder.setText(shipOrder);
+        }
+        if(isChecked==true) {
+            String shipOrder = "Order Info " + "\n" + "Name: " + name + "\n" + "Your chosen ship: " + mPreferences.getString("com.example.kentec.catchastarship.chosenShip", "") + "\n" + "Is not an Earthling" + "\n"
+                    + "Phone: " + phone + "\n" + "Address: " + address + "\n" + "country: " + country;
+
+            mShipOrder.setText(shipOrder);
+        }
     }
 
     FinalOrder.MyReceiver mReceiver = new MyReceiver();
@@ -63,6 +79,7 @@ public class FinalOrder extends AppCompatActivity {
             }
         }
     }
+
     public void changeActivityShips(View view){
         Intent intent = new Intent(this, ShipPicker.class);
         startActivity(intent);

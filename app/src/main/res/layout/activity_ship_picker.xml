@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     android:foregroundGravity="center_vertical"
     tools:context="com.example.kentec.catchastarship.ShipPicker"
     tools:layout_editor_absoluteY="25dp">
@@ -34,6 +34,7 @@
         android:layout_height="430dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="68dp"
         android:foregroundGravity="center_vertical"
         android:gravity="center_vertical"
@@ -51,8 +52,8 @@
             android:layout_weight="1"
             android:button="@drawable/ship_1_resize"
             android:foregroundGravity="center_vertical"
-            android:onClick="onRadioButtonClicked"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:onClick="onRadioButtonClicked" />
 
         <RadioButton
             android:id="@+id/radioButtonShip2"
@@ -62,8 +63,8 @@
             android:layout_weight="1"
             android:button="@drawable/ship_3_resize"
             android:checked="false"
-            android:onClick="onRadioButtonClicked"
             android:gravity="center_vertical"
+            android:onClick="onRadioButtonClicked"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -74,8 +75,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:button="@drawable/ship_2_resize"
-            android:onClick="onRadioButtonClicked"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:onClick="onRadioButtonClicked" />
 
     </RadioGroup>
 
@@ -87,7 +88,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:fontFamily="@font/brigade"
         android:onClick="changeActivityAddress"
         android:text="Confrim"

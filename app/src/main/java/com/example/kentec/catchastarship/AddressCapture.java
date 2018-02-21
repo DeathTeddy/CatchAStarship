@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class AddressCapture extends AppCompatActivity {
@@ -41,17 +43,30 @@ public class AddressCapture extends AppCompatActivity {
         public void onReceive(Context context, Intent intent) {
 
             Log.v("myReceiver", "received an intent");
-            String info = "\n something wrong.";
-            int mStatus = 0;
             if (intent.getAction().equals(Intent.ACTION_BATTERY_LOW)) {  //battery is low!
                 Toast.makeText(context, "Battery low, loss of order may occur.", Toast.LENGTH_LONG).show();
-                mStatus = 1;
                 Log.v("myReceiver", "battery low");
             }
         }
     }
     public void changeActivityOrder(View view){
+
+        EditText editTextName = findViewById(R.id.editTextName);
+        EditText editTextCountry = findViewById(R.id.editTextCountry);
+        EditText editTextPhone = findViewById(R.id.editTextPhone);
+        EditText editTextAddress = findViewById(R.id.editTextAddress);
+        boolean isChecked = ((CheckBox) findViewById(R.id.notEarthling)).isChecked();
+
+
+
         Intent intent = new Intent(this, FinalOrder.class);
+
+        intent.putExtra("editTextName", editTextName.getText().toString());
+        intent.putExtra("editTextCountry", editTextCountry.getText().toString());
+        intent.putExtra("editTextPhone", editTextPhone.getText().toString());
+        intent.putExtra("editTextAddress", editTextAddress.getText().toString());
+        intent.putExtra("checkBoxValue", isChecked);
+
         startActivity(intent);
     }
 }
