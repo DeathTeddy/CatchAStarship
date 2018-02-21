@@ -11,19 +11,33 @@
         android:id="@+id/textView2"
         android:layout_width="286dp"
         android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/brigade"
         android:gravity="center"
         android:text="Thank you for using Catch'A Ship"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="34dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="324dp"
         android:layout_height="238dp"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Name; country; phone; address; ship"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="191dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
 
 </android.support.constraint.ConstraintLayout>
