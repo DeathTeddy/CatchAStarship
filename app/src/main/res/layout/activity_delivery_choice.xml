@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.kentec.catchastarship.DeliveryChoice"
     tools:layout_editor_absoluteY="25dp">
 
@@ -16,7 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="272dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:fontFamily="@font/brigade"
         android:onClick="changeActivityShips"
         android:text="New Order"
@@ -37,7 +37,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="348dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:fontFamily="@font/brigade"
         android:onClick="changeActivityOrder"
         android:text="View Last order"
