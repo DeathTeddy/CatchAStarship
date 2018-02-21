@@ -34,13 +34,13 @@ public class FinalOrder extends AppCompatActivity {
         String address = getIntent().getStringExtra("editTextAddress");
         boolean isChecked = getIntent().getBooleanExtra("checkBoxValue", false);
         if(isChecked==false) {
-            String shipOrder = "Order Info " + "\n" + "Name: " + name + "\n" + "Your chosen ship: " + mPreferences.getString("com.example.kentec.catchastarship.chosenShip", "") + "\n" + "Is an Earthling" + "\n"
+            String shipOrder = "Order Info " + "\n" + "______________" + "\n" + "\n" + "Name: " + name + "\n" + "Is an Earthling" + "\n" + "Your chosen ship: " + mPreferences.getString("com.example.kentec.catchastarship.chosenShip", "") + "\n"
                     + "Phone: " + phone + "\n" + "Address: " + address + "\n" + "country: " + country;
 
             mShipOrder.setText(shipOrder);
         }
         if(isChecked==true) {
-            String shipOrder = "Order Info " + "\n" + "Name: " + name + "\n" + "Your chosen ship: " + mPreferences.getString("com.example.kentec.catchastarship.chosenShip", "") + "\n" + "Is not an Earthling" + "\n"
+            String shipOrder = "Order Info " + "\n" + "______________" + "\n" + "\n" + "Name: " + name + "\n" + "Is not an Earthling" + "\n" + "Your chosen ship: " + mPreferences.getString("com.example.kentec.catchastarship.chosenShip", "") + "\n"
                     + "Phone: " + phone + "\n" + "Address: " + address + "\n" + "country: " + country;
 
             mShipOrder.setText(shipOrder);
